@@ -22,7 +22,7 @@
 			            "value": "",
 			            "isEditableByEndUser": true
 			        },
-			        "_subject": {
+			        "Prechat_Choice": {
 			            "value": "",
 			            "isEditableByEndUser": true
 				}
