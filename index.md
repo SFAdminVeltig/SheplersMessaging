@@ -8,26 +8,7 @@
 			console.log( "Inside Prechat API!!" );
 			embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields( {'QueueName' : 'Sheplers Messaging' } );
 			});
-			window.addEventListener("onEmbeddedMessagingReady", e => {
-			    embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields({
-			        "_firstName": {
-			            "value": "",
-			            "isEditableByEndUser": true
-			        },
-			        "_lastName": {
-			            "value": "",
-			            "isEditableByEndUser": true
-			        },
-			        "_email": {
-			            "value": "",
-			            "isEditableByEndUser": true
-			        },
-			        "Prechat_Choice": {
-			            "value": "",
-			            "isEditableByEndUser": true
-				}
-			    });
-			});
+
 			embeddedservice_bootstrap.init(
 				'00DOt000002m0EL',
 				'Sheplers_Messaging',
