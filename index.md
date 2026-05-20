@@ -3,18 +3,19 @@
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-			
+			embeddedservice_bootstrap.settings.enableUserInputForConversationWithBot = false; // Prevent user from typing if bot hasn't responded.
+		
 		window.addEventListener("onEmbeddedMessagingReady", () => {            
 			console.log( "Inside Prechat API!!" );
 			embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields( {'QueueName' : 'Sheplers Messaging' } );
 			});
 
 			embeddedservice_bootstrap.init(
-				'00DOt000002m0EL',
+				'00D6g0000050w0P',
 				'Sheplers_Messaging',
-				'https://bootbarn--uat.sandbox.my.site.com/ESWSheplersMessaging1770066250362',
+				'https://bootbarn.my.site.com/ESWSheplersMessaging1770066250362',
 				{
-					scrt2URL: 'https://bootbarn--uat.sandbox.my.salesforce-scrt.com'
+					scrt2URL: 'https://bootbarn.my.salesforce-scrt.com'
 				}
 			);
 		} catch (err) {
@@ -22,5 +23,5 @@
 		}
 	};
 </script>
-<script type='text/javascript' src='https://bootbarn--uat.sandbox.my.site.com/ESWSheplersMessaging1770066250362/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://bootbarn.my.site.com/ESWSheplersMessaging1770066250362/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 </html>
